@@ -10,8 +10,14 @@ class Rectangle:
     def calculate_P(self):
         return (self.a + self.b) * 2
 
-    def get_info(self):
+    def __str__(self):
         return f"Rectangle:A = {self.a}, b={self.b}"
+
+    # def __repr__(self):
+    #      return f"WOW"
+    #
+    #  def __str__(self):
+    #     return f"fufufufufufufufu"
 
     def __del__(self):
         pass
@@ -25,3 +31,6 @@ class Rectangle:
 # print(rect2.get_info())
 # print(rect3.get_info())
 # print(rect4.get_info())
+
+# rect = Rectangle()
+# print(rect)
